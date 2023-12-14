@@ -14,19 +14,29 @@ body {
     align-items: center; */
     display: grid;
     place-items: center;
-    background-color: #ebebeb;
+    background-color: #072235;
 }
 
 .title{
     margin-top: 3rem;
-    color: blue;
-    font-family: 'Silkscreen';
-    font-size: 30px;
+    color: #d90429;
+    text-align: center;
+    /* font-family: 'Silkscreen'; */
+    font-size: 20px;
 }
-
+#onlychat-logo{
+    width: 100px;
+    height: 100px;
+}
+#appname {
+    font-family: 'Silkscreen';
+}
+.overview{
+    color: white;
+}
 .main{
     margin-top: 1rem;
-    border: 8px solid #dddddd;
+    border: 8px solid #4dccbd;
     border-radius: 24px;
     overflow: hidden;
     scroll-behavior: smooth;
@@ -36,31 +46,32 @@ body {
     font-size: 32px;
     font-weight: 700;
     padding: 8px 16px;
-    color: #7e7e7e;
-    background-color: #ebebeb;
+    color: #4dccbd;
+    background-color: #4dccbd;
 }
 
 .name > span {
-    color: #bbb;
+    color: #072235;
 }
 
 .name-input {
     font-size: 24px;
     font-weight: 700;
-    color: #7e7e7e;
+    color: #072235;
     flex-grow: 1;
     border: none;
     margin: 0px 12px;
     outline: none;
-    background-color: #ebebeb;
+    background-color: #4dccbd;
+    font-family: 'Silkscreen';
 }
 
 .message-container {
     display: flex;
     flex-direction: column;
-    background-color: #f6f6f6;
-    width: 400px;
-    height: 450px;
+    /* background-color: #f; */
+    width: 450px;
+    height: 400px;
     scroll-behavior: smooth;
 }
 
@@ -76,23 +87,33 @@ body {
 .message-left {
     border-radius: 20px 20px 20px 0px;
     align-self: self-start;
-    background-color: #fff;
-    box-shadow: -2px 2px 4px #dcdcdc;
+    background-color: #f0ebd8;
+    /* box-shadow: -2px 2px 4px #dcdcdc; */
 }
 .message-right {
     border-radius: 20px 20px 0px 20px;
     align-self: self-end;
-    background-color: #2d2d2d;
-    box-shadow: 2px 2px 4px #dcdcdc;
+    background-color: #da2c38;
+    /* box-shadow: 2px 2px 4px #dcdcdc; */
     color: #f6f6f6;
 }
 
-.message-left > p > span, .message-right > p > span {
+.message-left > p > span {
     display: block;
+    color: darkblue;
     font-style: italic;
-    font-size: 12px;
+    font-size: 10px;
     margin-top: 4px;
 }
+
+.message-right > p > span {
+    display: block;
+    color: lightgray;
+    font-style: italic;
+    font-size: 10px;
+    margin-top: 4px;
+}
+
 .feedback {
     font-style: italic;
     font-size: 14px;
@@ -104,35 +125,44 @@ body {
 .message-form {
     display: flex;
     justify-content: space-between;
-    width: 400px;
+    width: 450px;
 }
 .message-input {
     flex-grow: 1;
     height: 48px;
     border: none;
     outline: none;
+    margin-top: .5rem;
+    margin-left: .5rem;
     padding: 0 12px;
-    background-color: #fff;
+    border: 3px solid #003554;
+    border-radius: 12px;
+    color: #4dccbd;
+    font-size: 20px;
+    background-color: #072235;
 
 }
 
 .send-button {
+    margin-top: .5rem;
     height: 48px;
     font-size: 16px;
     border: none;
     padding: 0px 20px;
     outline: none;
-    background-color: #fff;
+    color: white;
+    background-color: #072235;
     cursor: pointer;
 }
 .v-divider {
     height: 4px;
     width: 2px;
-    background-color: #f6f6f6;
+    background-color: #072235;
 }
 
 .client-total {
     margin: 20px 0px;
-    color: #7e7e7e;
+    font-family: 'Silkscreen';
+    color: #4dccbd;
     text-align: center;
 }
